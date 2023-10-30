@@ -139,6 +139,11 @@ a {
   padding: 15px;
   max-width: 270px;
 }
+.logosm {
+  display: none;
+  padding: 5px;
+  max-width: 80px;
+}
 .menu {
   display: flex;
   flex-wrap: wrap;
@@ -194,7 +199,6 @@ a {
 .base {
   background-color: var(--preto3);
   display: flex;
-  padding: 40px;
   justify-content: center;
 }
 .colum1 {
@@ -203,6 +207,7 @@ a {
 }
 .colum1 li {
   padding: 10px;
+  text-align: center;
 }
 .colum1 li a {
   color: var(--cinza);
@@ -218,8 +223,7 @@ footer p {
   color: var(--verde);
   text-align: center;
 }
-@media only screen and (max-width: 400px) { 
-  
+@media only screen and (max-width: 400px) {
   header {
     background-color: var(--preto3);
     align-items: center;
@@ -227,8 +231,12 @@ footer p {
     padding: 5px;
   }
   .logo {
-    padding: 5px;
-    max-width: 80px;
+    display: none;
+  }
+  .logosm {
+    display: block;
+    padding: 1px;
+    max-width: 50px;
   }
   .menu {
     display: flex;
@@ -241,7 +249,7 @@ footer p {
     padding: 1rem 1rem;
     color: var(--branco);
     text-transform: uppercase;
-    font-size: .6rem;
+    font-size: 0.6rem;
   }
   .menu li:hover > .sub-menu {
     display: block;
@@ -263,7 +271,7 @@ footer p {
     padding-right: 0px;
     max-width: 400px;
   }
-  .txt img{
+  .txt img {
     display: none;
   }
   .txt,

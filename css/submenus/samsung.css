@@ -139,6 +139,11 @@ a {
   padding: 15px;
   max-width: 270px;
 }
+.logosm {
+  display: none;
+  padding: 5px;
+  max-width: 80px;
+}
 .menu {
   display: flex;
   flex-wrap: wrap;
@@ -240,8 +245,12 @@ footer p {
     padding: 5px;
   }
   .logo {
-    padding: 5px;
-    max-width: 80px;
+    display: none;
+  }
+  .logosm {
+    display: block;
+    padding: 1px;
+    max-width: 50px;
   }
   .menu {
     display: flex;
