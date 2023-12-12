@@ -9,57 +9,11 @@
   --branco: #fff;
   --branco1: #f5f5f5;
   --preto4: #000000;
-  --preto3: #1f1f1f;
+  /* --preto3: #1f1f1f; */
+  --preto3: tomato;
   --preto2: #3f3f3f;
   --preto1: #5e5e5e;
   --preto: #7d7d7d;
-}
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: var(--preto3);
-  }
-  p {
-    color: var(--cinza);
-  }
-  .header {
-    background-color: var(--preto3);
-  }
-  .menu a {
-    background: var(--preto3);
-    color: var(--branco);
-  }
-  .sub-menu {
-    box-shadow: 3px 3px 3px 1px var(--preto4);
-  }
-
-  footer {
-    background-color: var(--preto3);
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: var(--branco1);
-  }
-  p {
-    color: var(--cinza);
-  }
-  .header {
-    background-color: var(--branco1);
-  }
-  .menu a {
-    background: var(--branco1);
-    color: var(--preto3);
-  }
-  .sub-menu {
-    box-shadow: 3px 3px 3px 1px var(--branco);
-  }
-  .base {
-    background-color: var(--branco1);
-  }
-  footer {
-    background-color: var(--branco1);
-  }
 }
 body {
   font-family: roboto, sans-serif;
@@ -88,7 +42,6 @@ a {
   text-decoration: none;
 }
 .header {
-  background-color: var(--preto3);
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -106,7 +59,6 @@ a {
 }
 .menu a {
   display: block;
-  background: var(--preto3);
   padding: 1rem 2rem;
   color: var(--branco);
   text-transform: uppercase;
@@ -148,7 +100,6 @@ a {
 }
 .base {
   padding: 40px;
-  background-color: var(--preto3);
 }
 .base h2 {
   text-align: left;
@@ -233,7 +184,7 @@ a {
     padding: 20px;
   }
   .base li:nth-child(even) {
-  max-width: 400px;
+    max-width: 400px;
   }
   .base li:nth-child(odd) {
     max-width: 2000px;
@@ -242,7 +193,6 @@ a {
 
 @media only screen and (max-width: 100px) {
   .header {
-    background-color: var(--preto3);
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -259,7 +209,7 @@ a {
   }
   .menu a {
     display: block;
-    background: var(--preto3);
+
     padding: 1rem 1rem;
     color: var(--branco);
     text-transform: uppercase;
@@ -322,8 +272,7 @@ a {
     margin: 0px;
     padding: 0px;
   }
-    header {
-    background-color: var(--preto3);
+  header {
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -340,7 +289,7 @@ a {
   }
   .menu a {
     display: block;
-    background: var(--preto3);
+
     padding: 1rem 1rem;
     color: var(--branco);
     text-transform: uppercase;
@@ -393,14 +342,12 @@ a {
     min-width: 300px;
     margin-left: 0px;
     margin-right: 0px;
-  
   }
   footer p {
     font-size: smaller;
   }
 }
 footer {
-  background-color: var(--preto3);
   bottom: 0;
   /* position: fixed; */
   min-width: 100% !important;
